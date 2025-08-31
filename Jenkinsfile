@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        // Make sure you configure this name in Jenkins -> Manage Jenkins -> Tools -> JDK installations
+        jdk 'jdk17'
+    }
+
     stages {
         stage('Compile') {
             steps {
