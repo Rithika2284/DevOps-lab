@@ -15,11 +15,11 @@ public class TestFactorial {
             }
             System.out.println("All test cases passed!");
         } catch (AssertionError e) {
-            System.out.println( e.getMessage());
+            System.out.println(e.getMessage());
             System.exit(1);  // make Jenkins fail the build
         } catch (Exception e) {
-            System.out.println( e.getMessage());
+            System.out.println(e.getMessage());
             System.exit(1);
-        }
-    }
+        }
+    }
 }
